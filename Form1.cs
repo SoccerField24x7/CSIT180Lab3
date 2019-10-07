@@ -61,9 +61,9 @@ namespace GolfScores
 
             // Update the Hole being displayed (and awaiting input)
             var hole = Player1.GetHoleCount();
-            lblHoleNumberP1.Text = (hole < 18 ? hole + 1 : 18).ToString();
+            lblHoleNumberP1.Text = (hole < ScoringLogic.NUM_HOLES ? hole + 1 : ScoringLogic.NUM_HOLES).ToString();
             
-            if (hole == 18) // we've reached the end of the round!
+            if (hole == ScoringLogic.NUM_HOLES) // we've reached the end of the round!
             {
                 ShowScoresP1();
 
@@ -107,9 +107,9 @@ namespace GolfScores
 
             // Update the Hole being displayed (and awaiting input)
             var hole = Player2.GetHoleCount();
-            lblHoleNumberP2.Text = (hole < 18 ? hole + 1 : 18).ToString();
+            lblHoleNumberP2.Text = (hole < ScoringLogic.NUM_HOLES ? hole + 1 : ScoringLogic.NUM_HOLES).ToString();
 
-            if (hole == 18) // we've reached the end of the round!
+            if (hole == ScoringLogic.NUM_HOLES) // we've reached the end of the round!
             {
                 ShowScoresP2();
 
