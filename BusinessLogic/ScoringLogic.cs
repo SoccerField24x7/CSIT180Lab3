@@ -10,7 +10,7 @@ namespace GolfScores.BusinessLogic
     {
         public string PlayerName { get; set; }
         public int[] Scores;
-        private const int NUM_HOLES = 18;
+        public static readonly int NUM_HOLES = 9;
         private int CurrentHole = 0;
 
         public ScoringLogic(string playerName)
